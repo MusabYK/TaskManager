@@ -1,0 +1,205 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #dbe2ef); /* Subtle gradient background */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85); /* Transparent container for light effect */
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Depth with soft shadow */
+  backdrop-filter: blur(10px);
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Form and Task List Styles */
+.task-form, .task-list {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent for elegance */
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.task-form h2, .task-list h2 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input, Textarea, Select Styles */
+input, textarea, select {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  background-color: #fff;
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.3); /* Focus highlight */
+}
+
+/* Submit Button Styles */
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px); /* Lifting effect on hover */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table thead {
+  background-color: #34495e;
+  color: white;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.filters input, .filters select {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px); /* Lifting effect on hover */
+}
+
+/* Input Grouping */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Priority Color Coding */
+.priority-low {
+  background-color: #e3fcef; /* Light green for low priority */
+}
+
+.priority-medium {
+  background-color: #f9f7e8; /* Light yellow for medium priority */
+}
+
+.priority-high {
+  background-color: #fdecea; /* Light red for high priority */
+}
+
+/* Border Color for Visual Hierarchy */
+.priority-low td {
+  border-left: 5px solid #2ecc71; /* Green for Low */
+}
+
+.priority-medium td {
+  border-left: 5px solid #f1c40f; /* Yellow for Medium */
+}
+
+.priority-high td {
+  border-left: 5px solid #e74c3c; /* Red for High */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}

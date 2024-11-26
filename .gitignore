@@ -1,0 +1,54 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables file
+.env
+
+# Optional npm cache directory
+.npm
+
+# Directory for coverage reports
+coverage/
+
+# Build directory
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Mac system files
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+
+# Test output
+test/
+jest/
+mocha/
+
+# Package-lock for Yarn
+yarn.lock
+
+# Generated documentation files
+doc/
+
+# Ignore any files ending in .local or .dev for local development setups
+*.local
+*.dev
+
+# Ignore miscellaneous files created by OS or editors
+Thumbs.db

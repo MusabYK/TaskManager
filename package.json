@@ -1,0 +1,14 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "3MTT capstone project",
+  "main": "login.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Musab",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

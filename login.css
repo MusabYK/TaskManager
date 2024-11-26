@@ -1,0 +1,131 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Cool and modern font */
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa, #dbe2ef); /* Subtle gradient background */
+  color: #fff;
+}
+
+/* Login Container */
+#login-screen {
+  background-color: rgba(0, 0, 50, 0.5); /* Transparent container */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  position: relative;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="email"], 
+input[type="password"] {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Highlight effect */
+}
+
+/* Button Styles */
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #6e8efb;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #a777e3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+#loginError {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: none;
+  color: #ff6b6b; /* Error color */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #login-screen {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input[type="email"], 
+  input[type="password"] {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input[type="email"], 
+  input[type="password"] {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}

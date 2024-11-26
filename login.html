@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TaskMaster</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" style="color: red; display: none;">Invalid email or password</p>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const loginError = document.getElementById('loginError');
+
+    // Dummy credentials (replace with a real authentication system later)
+    const validUser = {
+      email: 'test@example.com',
+      password: 'password123'
+    };
+
+    // Function to handle login
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Validate credentials
+      if (email === validUser.email && password === validUser.password) {
+        // Store login state in localStorage/sessionStorage
+        localStorage.setItem('isLoggedIn', 'true');
+
+        // Redirect to the home page
+        window.location.href = 'home.html';
+      } else {
+        // Show error message
+        loginError.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
