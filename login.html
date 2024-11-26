@@ -41,7 +41,8 @@
       const password = document.getElementById('password').value;
 
       // Validate credentials
-      if (email === validUser.email && password === validUser.password) {
+      // if (email === validUser.email && password === validUser.password) {
+      if (email != "" && password != "") {
         // Store login state in localStorage/sessionStorage
         localStorage.setItem('isLoggedIn', 'true');
 
