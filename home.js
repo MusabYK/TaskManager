@@ -73,7 +73,7 @@ const isLoggedIn = localStorage.getItem('isLoggedIn');
 
 if (isLoggedIn !== 'true') {
   // If not logged in, redirect to login page
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 // Logout function
@@ -83,5 +83,5 @@ logoutButton.addEventListener('click', function() {
   localStorage.removeItem('isLoggedIn');
 
   // Redirect to login page
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 });
